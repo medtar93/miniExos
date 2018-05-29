@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>miniexo07</title>
+    <style>
+        body{
+            background: olive;
+        }
+        /* le formulaire sur le CSS */
+
+form{
+    background: orange;;
+    padding:50px;
+}
+/* div{
+    background: orange;
+} */
+fieldset{
+    /* background: greenyellow; */
+    padding: 40px;
+    margin-bottom: 20px;
+    border: 1px dashed #e00037;
+}
+legend{
+    font-weight: 800px;
+    columns: #935009;
+}
+label{
+    
+}
+
+input, textarea, select {
+    border: 3px solid olivedrab;
+    padding: 5px;
+    box-shadow: 1px 1px 2px grey inset;
+}
+select{
+    margin-top: 10px;
+
+}
+    </style>
+
+
+</head>
+<body>
+  <h1>Un formulaire d'iscription</h1> 
+      <form action="fichier.php" method="POST">
+              <fieldset>
+                  <legend>Identité</legend>
+                  <label for="nom">Nom</label>
+                  <input type="nom" name="envoyez">
+                  <label for="prénom">Prénom</label>
+                  <input type="none" name="none">
+                 </fieldset>
+                 <fieldset>
+                          <legend>Votre adresse postale</legend>
+                          <label for="adresse">Adresse</label>
+                          <input type="text" name="adresse" placeholder="adresse postale">
+                          <label for="code_postal">Code postale</label>
+                          <input type="text" name="code_postale"    placeholder="code postale">
+                          <label for="ville">Ville</label>
+                          <input type="text" name="ville" placeholder="ville">
+                          </fieldset>
+                          <fieldset>
+                              <legend>Votre email</legend>
+                              <label for="email">Adresse email</label>
+                              <input type="email" name="email">
+                          </fieldset>
+           <fieldset>
+               <legend>Sexe</legend> 
+               <!-- des boutos radio le 1er est coché --> 
+               <label for="sexe">Homme</label>
+               <input type="radio" name="sexe" value="homme" checked>
+               <label for="sexe">Femme</label>
+               <input type="radio" name="sexe" value="Femme">                      
+           </fieldset>
+           <fieldset>
+                  <legend>Avez-vous du matériel ?</legend> 
+                  <!-- des boutos radio le 1er est coché -->
+                  <label for="matos">J'ai des aiguilles</label>
+                  <input type="checkbox" name="matos" value="aiguille">
+                  <label for="matos">J'ai de la laine</label>
+                  <input type="checkbox" name="matos" value="laine">
+                  <label for="matos">Non je n'est rien</label> 
+                  <input type="checkbox" name="matos" value="Non">         
+              </fieldset>
+             <fieldset>
+                  <legend>Faites-vous du sport ?</legend>
+                  <label for="usage">Votre usage</label>
+                  <select name="usage">
+                         <option value="0">Choissisez votre niveau</option>
+                         <option value="jamais">Jamais</option>
+                         <option value="un peu">Un peu</option>
+                         <option value="parfoit">Parfoit</option>
+                         <option value="toujours">Tous les jours</option>
+                  </select>
+              </fieldset>
+              <fieldset>
+                  <legend>Votre commentaire</legend>
+                  <label for="message">Votre message</label>
+                  <textarea name="message" cols="50" rows="8">Dites-en un peu plus</textarea>
+              </fieldset>
+              <fieldset>
+                  <legend>Inscrivez-vous en envoyant le formulaire</legend>
+                  <input type="submit" name="insrivez-vous" value="Inscrivez-vous">
+                  <input type="submit" name="effacer" value="Effacer">
+                  <small>*obligatoire</small>
+              </fieldset>
+</form>
+</body>
+</html>
