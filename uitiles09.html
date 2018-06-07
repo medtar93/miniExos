@@ -6,62 +6,75 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>UiTILES 02</title>
     <style>
-      body{
-          background: #00D2DE;
-      }
-      header{
-        background: olive;
-           margin: 0 auto;
-           width: 600px;
-           text-align: center;
-      }
-      #wrapper{
-          background: #99D5D8;
-      }
-      #container{
-          margin-top:10px;
-      }
-      
-      .droite{
-          float:right;
-      }
-      .gauche{
-          float: left;
-      }
-      .arrondi{
-          border-radius: 30px;
-      }
-     
-     
+body{ 
+    background: #00D2DE;
+    margin: 0 auto;
+} 
+#wrapper{ 
+    margin: 0 auto;
+    width: 1000px;
+    background: #99D5D8;
+}
+header{
+background: olive;
+    margin: 0 auto;
+    width: 600px;
+    text-align: center;
+    height: 200px;
+}
+.droite{
+    float: right;
 
+}
+.gauche{
+    float: left;    
+}
+.clear{
+    clear: both;
+}
+textarea{
+    border: 2px solid #000;
+    border-radius: 30px;
+}
 
-
-
-     
-      }
+.commentaire{
+    margin-left: 20px;
+}
+.box{
+background-color: pink;
+margin-top: 300px;
+width: 1000px;
+}
+section p{
+width: 700px;
+}
+section img{
+width: 210px;
+}
     </style>
 </head>
 <body>
     <div id="wrapper">
         <header>ADD COMMENT</header>
-        <div id="container">
-            <div id="pic1"  class="gauche arrondi">
-                <img src="uiTiles/user_logo.png" alt="profil picture">
-            </div>
-            <div class="droite">  <!-- zone de texte vide -->            
-                    <textarea class="arrondi" name="text" id="text" cols="80" rows="12
-                    "></textarea>            
+            <section class="section1">
+                <div id="pic1"  class="gauche">
+                    <img src="uiTiles/user_logo.png" alt="profil picture">
+                </div>
+                <div class="droite commentaire">  <!-- zone de texte vide -->            
+                    <textarea class="arrondi" name="text" id="text" cols="80" rows="12"></textarea>            
                     <p> <!-- bouton envoyer -->                
                         <input class="arrondi" type="submit" name="envoyer" value="Envoyer">            
-                </p>        
-            </div>
+                    </p>        
+                </div> 
+                <div class="clear"></div>
+            </section>
+        <div class="box">
+            <section>
+                <img class="gauche" src="uiTiles/user_logo.png" alt="">
+                <p class="droite"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, accusantium repellat? Architecto quae dolorem expedita, quia, provident voluptatem repellat dignissimos magnam dolorum aut quos? Reprehenderit, dolores culpa. Tenetur, ea voluptatem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem eius modi architecto ipsa a quae similique beatae voluptates laboriosam nulla dignissimos consequuntur illo aliquid obcaecati vitae nostrum, earum eligendi corporis.</p>
+            </section>
+            
         </div>
-        <div id="container2" class="arrondi">
-            <img class="gauche" src="uiTiles/user_logo.png" alt="">
-            <p class="droite">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident amet sapiente earum nam nulla sequi doloribus voluptas impedit? Nemo laborum voluptatum tempore cumque veritatis minus neque dolorum sequi alias officiis.</p>
-        </div>
-    </div>
-   
-   
+    </div> <!-- fin wrapper -->
 </body>
 </html>
