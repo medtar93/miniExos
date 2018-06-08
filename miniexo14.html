@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>miniexo12</title>
+    <!-- <link rel="stylesheet" href="css/style11.css"> -->
+<style>
+    /* couleurs */
+    .bleu{
+        background: lightblue;
+        border: 2px solid black;
+    }
+    .centre{
+        margin: 0 auto;
+        width: 60%;
+        border: 2px solid green;
+        padding: 10px;
+        text-align: center;
+    }
+    .imgcentre{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .droite{
+        position: absolute; /* position absolute et  right 0*/
+        right: 0;
+        width: 300px;
+        border: 2px solid green;
+        padding 2px;
+    }
+    .image1{
+        float: right;
+    }
+    .image2{
+        float: right;
+    }
+    .clearfix{
+        overflow: auto;
+    }
+    .clearright{
+        clear: right;
+    }
+</style>
+</head>
+<body>
+   <h2>dans cet exemple l'image est plus grande que l'élément qui la cintien, et elle flotte donc elle sort du bloc</h2>
+
+   <div class="bleu">
+       <!-- l'image est dans la div mais elle est plus grande et donne l'impression de sortir de la div  -->
+        <img src="montagne.jpg" alt="montagne" class="image1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur eum voluptatem tenetur provident. Dolore vel dolor nemo id nihil quaerat ducimus reprehenderit, odio pariatur in adipisci officia labore harum maxime?
+  </div>
+  <p class="clearright">on ajouter un class clearfix avec <code>overflow: auto</code> pour régler le problème</p>
+    <div class=" bleu clearfix">
+            <img src="montagne.jpg" alt="montagne" class="image2">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur eum voluptatem tenetur provident. Dolore vel dolor nemo id nihil quaerat ducimus reprehenderit, odio pariatur in adipisci officia labore harum maxime?
+    </div>
+  
+</body>
+</html>

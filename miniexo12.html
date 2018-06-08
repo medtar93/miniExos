@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>miniexo12</title>
+    <!-- <link rel="stylesheet" href="css/style11.css"> -->
+<style>
+    /* couleurs */
+    .bleu{
+        background: lightblue;
+    }
+    .centre{
+        margin: 0 auto;
+        width: 60%;
+        border: 2px solid green;
+        padding: 10px;
+        text-align: center;
+    }
+    .imgcentre{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .droite{
+        position: absolute; /* position absolute et  right 0*/
+        right: 0;
+        width: 300px;
+        border: 2px solid green;
+        padding 2px;
+    }
+</style>
+</head>
+<body>
+    <h2>Au centre horizontalement</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo odit possimus officiis? Quis assumenda architecto officiis ipsam iste nulla temporibus voluptate eos eum esse quidem aut, maiores cum odit voluptatum?</p>
+    <div class="centre bleu">
+        <p>le paragraphe est dans un block centré</p>
+    </div>
+    <hr>
+    <h2> une image centrer</h2>
+    <p>pour centrer une image mettre les marges gauche et droite à auto et en faire un bloc</p>
+        <img src="montagne.jpg" alt="" class="imgcentre">
+    <hr>
+    <h2>Alignement à gauche et à droite en utilisant position</h2>
+    <p>une méthode pour aligner à gauche et à droite en utilisant  <code>position: absolute;</code></p>    
+    <div class="droite">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita cumque blanditiis molestiae veritatis, totam nam minima fugit eos, voluptates harum aliquam ipsa assumenda similique provident, laudantium eligendi quod architecto ratione!</p>
+    </div>
+</body>
+</html>
